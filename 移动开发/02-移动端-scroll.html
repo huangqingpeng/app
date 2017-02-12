@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style>
+			html,body{
+				margin:0;
+				padding: 0;
+				height:100%;
+				width:100%;
+			}
+			.wraper{
+				height:50%;
+				width:100%;
+				background:pink;
+				overflow: hidden;
+			}
+		</style>
+		<script type="text/javascript" src="js/iscroll-min.js" ></script>
+	</head>
+	<body>
+		<div class="wraper">
+			<div class="div2">
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿胜多负少的尽快发货乐山大佛亿
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			var myScroll=new IScroll(".wraper",{
+				  disableMouse: true,      disablePointer: true,zoom:true
+			})
+//			myScroll.on("scrollStart",function(){
+//			    console.log("滚动开始");
+//			});
+			myScroll.on("scrollEnd",function(){
+			    console.log("滚动结束");
+			    console.log(myScroll.distY);
+			    //myScroll.distY:为正值  代表下拉           myScroll.distY:为负值时   代表上拉
+			    
+			    if(myScroll.distY>100){
+			    	console.log("下拉");//下拉一般是刷新当前页面
+			        myScroll.refresh();
+			       // myScroll.zoom(20, 20,0.5, 2);
+			    }
+			    if(myScroll.distY<-100){
+			    	console.log("上拉");//上拉一般是加载更多
+			    }
+			    
+			})
+			
+		</script>
+	</body>
+</html>

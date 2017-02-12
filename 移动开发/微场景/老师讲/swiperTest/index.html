@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=640,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../../scriptBags/swiper3/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="../../scriptBags/swiper3/animate.min.css" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+		    	<div class="xy_center">
+		    		<img src="images/indexSnacky.jpg" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+		    	</div>
+		    	<div class="xy_center">
+		    		<div class="indexfont xy_center">
+		    			<img src="images/indexTxtThereis.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.33s" swiper-animate-delay="0.6s"/>
+		    		</div>
+		    		<div class="indexfont xy_center">
+		    			<img src="images/indexTxtLife.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.33s" swiper-animate-delay="1s"/>
+		    		</div>
+		    		<div class="indexfont xy_center">
+		    			<img src="images/indexTxtCnNestle.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.33s" swiper-animate-delay="1.4s"/>
+		    		</div>
+		    	</div>
+		    	<div class="upwizard">
+		    		<img src="images/arrow-up-blue.png" class="ani infinite" swiper-animate-effect="fadeOutUp" swiper-animate-duration="1s"/>
+		    	</div>
+		    </div>
+		    <div class="swiper-slide">
+		    	<div class="xy_center">
+		    		<img src="images/boy.gif" class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.33s"/>
+		    	</div>
+		    </div>
+		    <div class="swiper-slide">slider3</div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="../../scriptBags/swiper3/swiper-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../../scriptBags/swiper3/swiper.animate1.0.2.min.js" ></script>
+<script> 
+var mySwiper = new Swiper('.swiper-container', {
+	direction:"vertical",
+	onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+	    swiperAnimateCache(swiper); //隐藏动画元素 
+	    swiperAnimate(swiper); //初始化完成开始动画
+	}, 
+	onSlideChangeEnd: function(swiper){ 
+	    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+	} 
+})
+</script>
+	</body>
+</html>

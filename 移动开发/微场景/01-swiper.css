@@ -1,0 +1,205 @@
+html,body{
+	margin: 0;padding: 0;
+	height:100%;
+}
+.swiper-container{
+	height:100%;
+}
+/*垂直居中，左右居中*/
+.xy-center{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+.xy-bottom{
+	position:absolute;
+	bottom: 0;
+	left:0;
+	width:100%;
+}
+/*.xy-bottom>div{
+	width:200%;
+}*/
+.xy-bottom img:nth-child(1){
+	position: absolute;
+	left:0;
+	bottom: 0;
+	/*width:50%;
+	float:left;*/
+}
+.xy-bottom img:nth-child(2){
+	position: absolute;
+	left:0;
+	bottom: 0;
+	/*width:50%;
+	float:left*/
+}
+
+.upwizard{
+	position:absolute;
+	left:50%;
+	bottom:2%;
+	transform: translate(-50%,0);
+}
+.swiper-container .swiper-slide:nth-child(1){
+	background: #fff;
+}
+.swiper-container .swiper-slide:nth-child(2){
+	background: #fe657a;
+	overflow: hidden;
+}
+.swiper-container .swiper-slide:nth-child(3){
+	background: #09bee3;
+	overflow: hidden;
+}
+.swiper-container .swiper-slide:nth-child(4){
+	background: #36a15c;
+	overflow: hidden;
+}
+.swiper-container .swiper-slide:nth-child(5){
+	/*background: #497fe3,#669cff;*/
+	background: linear-gradient(#497fe3,#669cff);
+}
+.swiper-container .swiper-slide:nth-child(6){
+	background: #09bee3;
+}
+
+.xy-center.lightsRight{
+	position:absolute;
+	left:58%;
+	top:50%;
+	
+}
+.xy-left{
+	position:absolute;
+	left:2%;
+	top:2%;
+}
+.xy-right{
+	position:absolute;
+	right:2%;
+	bottom:2%;
+}
+
+.xy-right.me{
+	position:absolute;
+	right:10%;
+	bottom:25%;
+}
+.xy-right.title{
+	position:absolute;
+	right:15%;
+	bottom:12%;
+}
+
+.xy-center.girl{
+	position:absolute;
+	left:40%;
+	top:45%;
+}
+.xy-center.lightsLeft{
+	position:absolute;
+	left:40%;
+	top:45%;
+}
+
+.xy-center.starsLeft{
+	position:absolute;
+	left:40%;
+	top:45%;
+}
+
+.xy-right.girl.right{
+	
+}
+
+.xy-right.girl.left{
+	position:absolute;
+	left:8%;
+	top:2%;
+}
+.xy-right.girl.me{
+	position:absolute;
+	left:5%;
+	top:2%;
+}
+.xy-right.girl.title{
+	position:absolute;
+	left:5%;
+	top:3%;
+}
+
+
+
+.four.boy{
+	position:absolute;
+	left:0;
+	top:-5%;
+	width:20%;
+}
+.four.girl{
+	position:absolute;
+	left:5%;
+	top:-4%;
+	width:80%;
+}
+
+.four.lightsRight{
+	position:absolute;
+	left:-4%;
+	top:-12%;
+}
+
+.four.lightsLeft{
+	position:absolute;
+	left:20%;
+	top:-15%;
+}
+
+.four.arrow{
+	position:absolute;
+	left:35%;
+	bottom: 5%;
+}
+.four.you{
+	position:absolute;
+	left:35%;
+	bottom: 5%;
+}
+
+
+
+.five.summer{
+	position:absolute;
+	left:32%;
+	top: 10%;
+}
+
+.five.dots{
+	position:absolute;
+	left:48%;
+	top: 35%;
+}
+
+.job{
+	position:absolute;
+	left:5%;
+	top: 50%;
+}
+.job .five{
+	position:absolute;
+	left:0%;
+	top: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
